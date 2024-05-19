@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="../static/Page_two_styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <title>Smear Airlines</title>
+
+        <title>SmearAir</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="navbar" id="navbar">
+                <div class="logo" id="logo">Smear Airlines</div>
+                <ul class="nav-links" id="links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/bookings">Check My Bookings</a></li>
+                </ul>
+                <div class="burger-menu">&#9776;</div>
+            </div>
+        </nav>
+        <section class="first">
+            <div class="white-shade"></div>
+            <div class="forms">
+                <form action=/submit_name method="post" id="Customer">
+                    <div class="container">
+                        <div class="top row">
+                            <div class="col-md-6 mb-3">
+                                <label for="departureAirport">Departure Airport:</label>
+                                <select id="departureAirport" name="departureAirport" class="form-control" required>
+                                    <option value="">Select Departure Airport</option>
+                                    <option value="COE">COE</option>
+                                    <option value="TGJ">TGJ</option>
+                                    <option value="EAA">EAA</option>
+                                    <option value="AGB">AGB</option>
+                                    <option value="PTF">PTF</option>
+                                    <option value="GUP">GUP</option>
+                                    <option value="RRM">RRM</option>
+                                    <option value="VCD">VCD</option>
+                                    <option value="GFF">GFF</option>
+                                    <option value="TUE">TUE</option>
+                                    <option value="OSI">OSI</option>
+                                    <option value="DJJ">DJJ</option>
+                                    <option value="VLV">VLV</option>
+                                    <option value="DIJ">DIJ</option>
+                                    <option value="XTG">XTG</option>
+                                    <option value="HTM">HTM</option>
+                                    <option value="MBJ">MBJ</option>
+                                    <option value="LOQ">LOQ</option>
+                                    <option value="CLM">CLM</option>
+                                    <option value="ZTA">ZTA</option>
+                                    <option value="AXD">AXD</option>
+                                    <option value="RBI">RBI</option>
+                                    <option value="UDJ">UDJ</option>
+                                    <option value="COD">COD</option>
+                                    <option value="CEY">CEY</option>
+                                    <option value="IRG">IRG</option>
+                                    <option value="ZHY">ZHY</option>
+                                    <option value="ZPO">ZPO</option>
+                                    <option value="XYE">XYE</option>
+                                    <option value="VQS">VQS</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="destinationAirport">Destination Airport:</label>
+                                <select id="destinationAirport" name="destinationAirport" class="form-control" required>
+                                    <option value="">Select Destination Airport</option>
+                                    <option value="COE">COE</option>
+                                    <option value="TGJ">TGJ</option>
+                                    <option value="EAA">EAA</option>
+                                    <option value="AGB">AGB</option>
+                                    <option value="PTF">PTF</option>
+                                    <option value="GUP">GUP</option>
+                                    <option value="RRM">RRM</option>
+                                    <option value="VCD">VCD</option>
+                                    <option value="GFF">GFF</option>
+                                    <option value="TUE">TUE</option>
+                                    <option value="OSI">OSI</option>
+                                    <option value="DJJ">DJJ</option>
+                                    <option value="VLV">VLV</option>
+                                    <option value="DIJ">DIJ</option>
+                                    <option value="XTG">XTG</option>
+                                    <option value="HTM">HTM</option>
+                                    <option value="MBJ">MBJ</option>
+                                    <option value="LOQ">LOQ</option>
+                                    <option value="CLM">CLM</option>
+                                    <option value="ZTA">ZTA</option>
+                                    <option value="AXD">AXD</option>
+                                    <option value="RBI">RBI</option>
+                                    <option value="UDJ">UDJ</option>
+                                    <option value="COD">COD</option>
+                                    <option value="CEY">CEY</option>
+                                    <option value="IRG">IRG</option>
+                                    <option value="ZHY">ZHY</option>
+                                    <option value="ZPO">ZPO</option>
+                                    <option value="XYE">XYE</option>
+                                    <option value="VQS">VQS</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="departureDate"
+                                    >Departure Date:</label
+                                >
+                                <input
+                                    type="date"
+                                    id="departureDate2"
+                                    name="departureDate"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departureTime"
+                                    >Departure Time:</label
+                                >
+                                <select
+                                    id="departureTime"
+                                    name="departureTime"
+                                    class="form-control"
+                                    required>
+                                    <option value="19:00">19:00</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="numberOfPassengers"
+                                    >Number Of Passengers:</label
+                                >
+                                <input
+                                    type="number"
+                                    id="passengers2"
+                                    name="numberOfPassengers"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="numberOfPassengers"></label>
+                                <br />
+                                <button href="/airplane" id="Drake_Glizzy"class="button seats">
+                                    <p>Select Seats</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <h2>Passenger Information</h2>
+                        </div>
+                        <div class="bottom row">
+                            <div class="col-lg-6 mb-3">
+                                <label for="firstName">First Name:</label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="lastName">Last Name:</label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input
+                                    type="tel"
+                                    id="phoneNumber"
+                                    name="phoneNumber"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="identificationNumber"
+                                    >Identification Number:</label
+                                >
+                                <input
+                                    type="text"
+                                    id="identificationNumber"
+                                    name="identificationNumber"
+                                    class="form-control"
+                                    required />
+                            </div>
+                            <div class="col-md-12">
+                                <input
+                                    class="button"
+                                    type="submit"
+                                    value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="fifth">
+            <footer>
+                <div class="contact-info">
+                    <div>
+                        <h4>Contact Us</h4>
+                        <p>Email: contact@SmearAirlines.com</p>
+                        <p>Phone: +92 (315) 3738-555</p>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Main Street</p>
+                        <p>City, Country</p>
+                    </div>
+                    <div>
+                        <h4>Follow Us</h4>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+                <p>&copy; 2024 Smear Airlines. All rights reserved.</p>
+            </footer>
+        </section>
+
+        <script src="{{ url_for('static', filename='Page_two_script.js') }}"></script>
+        <script
+            src="https://kit.fontawesome.com/1895f8e829.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

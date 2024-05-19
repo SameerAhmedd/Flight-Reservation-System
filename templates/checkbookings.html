@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="../static/Page_three_styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <title>Smear Airlines</title>
+
+        <title>SmearAir</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="navbar" id="navbar">
+                <div class="logo" id="logo">Smear Airlines</div>
+                <ul class="nav-links" id="links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/bookings">Check My Bookings</a></li>
+                </ul>
+                <div class="burger-menu">&#9776;</div>
+            </div>
+        </nav>
+        <section class="first">
+            <div class="white-shade"></div>
+            <div class="forms">
+                <form action="/data-getter" method="post" id="Customer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input
+                                    type="text"
+                                    id="identificationNumber"
+                                    name="identificationNumber"
+                                    class="form-control"
+                                    placeholder="Enter Reservation ID to Search"
+                                    required />
+                            </div>
+                            <div class="col-md-6">
+                                <input
+                                    class="button"
+                                    type="submit"
+                                    value="Submit" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2>Flight Details</Details></h2>
+                        </div>
+                        <div class="top row">
+                            <div class="col-md-6 mb-3">
+                                <label for="departureCountry"
+                                    >Destination Country:</label
+                                >
+                                <input
+                                type="text"
+                                    id="departureCountry"
+                                    name="departureCountry"
+                                    class="form-control"
+                                    />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Destination_City"
+                                    >Destination City:</label
+                                >
+                                <input
+                                type="text"
+                                    id="Destination_City"
+                                    name="Destination_City"
+                                    class="form-control"
+                                    />
+                                    
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departureAirport"
+                                    >Departure Airport:</label
+                                >
+                                <input
+                                type="text"
+                                    id="departureAirport"
+                                    name="departureAirport"
+                                    class="form-control"
+                                    />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="destinationAirport"
+                                    >Destination Airport:</label
+                                >
+                                <input
+                                type="text"
+                                    id="destinationAirport"
+                                    name="destinationAirport"
+                                    class="form-control"
+                                    />
+                                    
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departureDate"
+                                    >Departure Date:</label
+                                >
+                                <input
+                                    type="date"
+                                    id="departureDate2"
+                                    name="departureDate"
+                                    class="form-control"
+                                     />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departureTime"
+                                    >Departure Time:</label
+                                >
+                                <input
+                                    id="departureTime"
+                                    name="departureTime"
+                                    class="form-control"
+                                    />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Class"
+                                    >Class:</label
+                                >
+                                <input
+                                    id="Class"
+                                    name="Class"
+                                    class="form-control"
+                                    />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Price"
+                                    >Class:</label
+                                >
+                                <input
+                                    id="Price"
+                                    name="Price"
+                                    class="form-control"
+                                    />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Seat"
+                                    >Class:</label
+                                >
+                                <input
+                                    id="Seat"
+                                    name="Seat"
+                                    class="form-control"
+                                    />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2>Passenger Information</h2>
+                        </div>
+                        <div class="bottom row">
+                            <div class="col-lg-6 mb-3">
+                                <label for="firstName">First Name:</label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    class="form-control"
+                                     />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="lastName">Last Name:</label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    class="form-control"
+                                     />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                     />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input
+                                    type="tel"
+                                    id="phoneNumber"
+                                    name="phoneNumber"
+                                    class="form-control"
+                                     />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button id="delete" href="/deleter" class="cancel-booking button">Cancel My Booking</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="fifth">
+            <footer>
+                <div class="contact-info">
+                    <div>
+                        <h4>Contact Us</h4>
+                        <p>Email: contact@SmearAirlines.com</p>
+
+                        <p>Phone: +92 (315) 3738-555</p>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Main Street</p>
+                        <p>City, Country</p>
+                    </div>
+                    <div>
+                        <h4>Follow Us</h4>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+                <p>&copy; 2024 Smear Airlines. All rights reserved.</p>
+            </footer>
+        </section>
+
+        <script src="{{ url_for('static', filename='Page_three_script.js') }}"></script>
+        <script
+            src="https://kit.fontawesome.com/1895f8e829.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

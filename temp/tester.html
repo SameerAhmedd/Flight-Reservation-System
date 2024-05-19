@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Dialogue Box</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main>
+        <h2>Enter Your Name</h2>
+        <form id="nameForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

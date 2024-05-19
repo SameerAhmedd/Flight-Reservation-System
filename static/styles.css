@@ -1,0 +1,573 @@
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: var(--line-height);
+    background-repeat: no-repeat;
+}
+
+.first {
+    /* background: url("main.jpeg") center/cover no-repeat fixed; */
+    height: 99vh;
+    width: 100vw;
+    position: relative;
+    top: -80px;
+    bottom: -100px;
+    padding-top: 0.5rem;
+    border: 5px rgb(255, 255, 255) solid;
+    border-bottom: 0;
+    border-top: 7px rgb(255, 255, 255) solid;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 98vh;
+    width: 100vw;
+    z-index: -1;
+    background-image: url("new.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0;
+}
+
+.sign-up {
+    display: inline-block;
+    padding: 1px 10px;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #0c0f3d; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+
+.scrolled {
+    background-color: #0c0f3d;
+    margin: 0px;
+    padding: 15px 0;
+    transition: background-color 1s ease;
+}
+
+/* .scrolled-button {
+    display: inline-block;
+    padding: 1px 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff6600;
+    color: #0c0f3d;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+} */
+
+nav {
+    /* background-color: #333;  */
+    color: #fff;
+    padding: 15px 0;
+    /* margin-top: 1rem; */
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: background-color 1s ease;
+}
+
+.logo {
+    margin-left: 30px;
+    /* left: 50px; */
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    font-size: 0.5em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.burger-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+.content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-top: 100vh;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.8rem;
+    position: relative;
+    top: 440px;
+    max-width: 90%;
+    max-height: 30vh;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0c0f3d; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer;
+    border: none;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #141852; /* Darker green on hover */
+    color: white;
+}
+
+.second {
+    height: 70vh;
+    width: 100vw;
+    color: #141852;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0;
+}
+
+.main-container {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.content-box {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon {
+    font-size: 2em; /* Adjust the size of the icon */
+    padding: 1rem;
+}
+
+.third {
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    background-color: #0c0f3d;
+    padding: 30px 15%;
+    /* padding-top: px; */
+    font-family: "Arial", sans-serif;
+    /* background-color: #f4f4f4; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.third h2 {
+    text-align: left;
+    font-size: 3rem;
+    color: #fff;
+    padding: 0;
+}
+
+.third form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 65vh;
+}
+
+.third label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.third input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.third input[type="date"] {
+    padding: 8px;
+}
+
+.third button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.third button:hover {
+    background-color: #e04d00;
+    transform: scale(1.05);
+}
+
+.fourth {
+    background-color: #fff;
+    padding: 20px 15%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+}
+
+.fourth p {
+    color: #0c0f3d;
+}
+
+.fourth form {
+    width: 500px;
+}
+
+.fourth h2 {
+    text-align: left;
+    font-size: 3rem;
+    padding: 0;
+    color: #0c0f3d;
+    padding: 0;
+}
+
+.fourth label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+    text-align: left;
+}
+
+.fourth input,
+.fourth textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fourth button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.fourth button:hover {
+    background-color: #e04d00;
+    transform: scale(1.05);
+}
+
+.fifth {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #0c0f3d;
+    color: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.contact-info div {
+    flex: 1;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* STANDARD WIDTHS */
+
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for large screens */
+}
+
+@media screen and (max-width: 1000px) {
+    /* Adjust styles for medium screens */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for small screens */
+    .second {
+        height: 130vh !important;
+    }
+    .main-container {
+        width: 70%;
+    }
+    .content-container {
+        flex-direction: column;
+        width: 70%;
+        margin: 0;
+    }
+    .content-box {
+        /* flex: 0 0 90%; */
+        margin: 9px 0;
+    }
+
+    .logo {
+        margin-left: 18px;
+    }
+
+    .flex {
+        margin-top: 30px;
+    }
+
+    .flex button {
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding-left: 50px;
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.3
+        ); /* Adjust the alpha value as needed */
+    }
+
+    .nav-links.show {
+        display: flex;
+        padding: 10px;
+        padding-left: 30px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-right: 15px;
+    }
+    .center-text {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fourth form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .third form {
+        margin: 20px auto !important;
+    }
+
+    .fourth {
+        flex-direction: column !important;
+        height: 70vh;
+    }
+
+    .third {
+        flex-direction: column !important;
+    }
+
+    .heading-container {
+        text-align: center;
+    }
+
+    .heading-container h2 {
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+/* EXTRA WIDTHS */
+
+@media (max-width: 1000px) {
+    .second {
+        height: 100vh;
+    }
+    .main-container {
+        width: 70%;
+    }
+    .content-container {
+        flex-direction: column;
+        width: 70%;
+        margin: 0;
+    }
+    .content-box {
+        /* flex: 0 0 90%; */
+        margin: 9px 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .flex {
+        top: 450px;
+    }
+    .center-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .flex {
+        top: 430px;
+    }
+    .center-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex {
+        top: 430px;
+    }
+    .center-text {
+        font-size: 1.6rem;
+    }
+
+    .second {
+        height: 160vh !important;
+    }
+
+    .fourth {
+        height: 55vh !important;
+    }
+
+    .third {
+        height: 80vh;
+    }
+
+    .third form {
+        margin: 20px auto !important;
+    }
+
+    .third h2 {
+        font-size: 40px !important;
+    }
+
+    .fourth form {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" /> -->
+        <title>Smear Airlines</title>
+
+        <title>SmearAir</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="navbar" id="navbar">
+                <div class="logo" id="logo">Smear Airlines</div>
+                <ul class="nav-links" id="links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#scroll-about">About</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/bookings">Check My Bookings</a></li>
+                </ul>
+                <div class="burger-menu">&#9776;</div>
+            </div>
+        </nav>
+        <section class="first">
+            <div class="background"></div>
+            <div class="flex">
+                <div class="center-text">"Fly Beyond Boundaries with Us!"</div>
+                <button class="button" onclick="scrollToElement('booking')">
+                    Book a flight!
+                </button>
+                <div id="scroll-about"></div>
+            </div>
+        </section>
+
+        <section class="second" id="about">
+            <div class="main-container">
+                <div class="content-box">
+                    <p class="lead">
+                        Welcome to Smear Airlines, the place where smooth travels and lofty goals meet. Through the fascinating story of our progress, from modest beginnings to becoming a forerunner in the aviation sector, our rich history reveals a gripping tale. We're more than just an airline company—we're a company dedicated to innovation, dependability, and safety.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="content-box">
+                    <i class="fa-solid fa-plane icon"></i>
+                    <p>
+                        Discover the wonders of our contemporary fleet of aircraft, which has been painstakingly developed to offer the highest level of comfort and efficiency. As we make our way toward a more environmentally friendlier and greener travel experience, discover our commitment to sustainability and learn about the cutting-edge technology that drives us forward.
+
+                    </p>
+                </div>
+                <div class="content-box">
+                    <i class="fa-solid fa-person icon"></i>
+                    <p>
+                        Every successful flight is the result of a group of enthusiastic people working together. Get to know our knowledgeable pilots, committed cabin crew, and the visionaries working behind the scenes to make sure your trip with Smear Airline is more than just a flight—it's a treasured memory. Discover the principles that guide our actions and influence each aspect of our business.
+                    </p>
+                </div>
+                <div class="content-box">
+                    <i class="fa-solid fa-globe icon"></i>
+                    <p>
+                        At Smear Airlines, we're committed to promoting connections—not merely between locations but also between individuals.
+                        Learn about our relationships, community activities, and methods of giving back to the world community. Come along with us as we work to create a future where travel is not only fun but also reasonably priced while also having a beneficial influence.
+                    </p>
+                </div>
+            </div>
+            <p id="booking"></p>
+        </section>
+
+        <section class="third">
+            <div class="heading-container">
+                <h2>Book a Flight!</h2>
+                <p>Enjoy hassle-free flight booking with the cheapest rates!</p>
+            </div>
+
+            <form action="/index" id="Destination">
+            
+                <label for="departureCountry">Departure Country:</label>
+                <input
+                    type="text"
+                    id="departureCountry"
+                    name="departureCountry"
+                    required />
+
+                <label for="departureCity">Departure City:</label>
+                <input
+                    type="text"
+                    id="departureCity"
+                    name="departureCity"
+                    required />
+
+                <label for="departureDate">Departure Date:</label>
+                <input
+                    type="date"
+                    id="departureDate"
+                    name="departureDate"
+                    required />
+
+                <label for="passengers">Number of Passengers:</label>
+                <input
+                    type="number"
+                    id="passengers"
+                    name="passengers"
+                    min="1"
+                    required />
+
+                <button type="submit">Proceed to Book</button>
+            </form>
+        </section>
+
+        <section class="fourth" id="contact">
+            <div class="heading-container">
+                <h2>Contact Us</h2>
+                <p>Feel free to contact us for anything!</p>
+            </div>
+
+            <form action="submit_form.php" method="post">
+                <label for="userEmail">Your Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required />
+
+                <label for="userQuery">Your Query:</label>
+                <textarea
+                    id="userQuery"
+                    name="userQuery"
+                    rows="4"
+                    required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="fifth">
+            <footer>
+                <div class="contact-info">
+                    <div>
+                        <h4>Contact Us</h4>
+                        <p>Email: contact@SmearAirlines.com</p>
+                        <p>Phone: +92 (315) 3738-555</p>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Main Street</p>
+                        <p>City, Country</p>
+                    </div>
+                    <div>
+                        <h4>Follow Us</h4>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+                <p>&copy; 2024 Smear Airlines. All rights reserved.</p>
+            </footer>
+        </section>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <script
+            src="https://kit.fontawesome.com/1895f8e829.js"
+            crossorigin="anonymous"></script>
+    </body>
+"></script>
+</body>
+</html>
