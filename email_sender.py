@@ -7,10 +7,10 @@ def emailsender(reciever,message,entered_name1,entered_name2,id,seat_number,Time
     server = smtplib.SMTP('smtp.office365.com',587)
     server.ehlo()
     server.starttls()
-    server.login('sameer_airlines_proj@outlook.com', 'ilovecum123')
+    server.login('smearairlines@outlook.com', 'sameerishere123')
     server.Subject = 'Flight Booking Info'
     server.BodyFormat = 1
-    sender="sameer_airlines_proj@outlook.com"
+    sender="smearairlines@outlook.com"
 
 
 
